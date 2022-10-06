@@ -107,3 +107,31 @@ function calcularAreaCirculo(){
     const area = areaCirculo(valorR);
     alert(area);
 }
+
+
+// reto 1: Triangulo isosceles
+
+function verificar (lado1, lado2, base){
+    if(lado1 === lado2 ){
+        const baseM = base / 2;
+        const ladoC = lado2 * lado2;
+        const baseC = baseM * baseM;
+        const altura = Math.sqrt(ladoC-baseC);
+        alert("La altura del triangulo isosceles es: "+ altura);
+    }else{
+        alert("El lado 1 y el lado 2 del triangulo no son iguales!!!");
+    }
+}
+
+
+
+function calcularAlturaTriangulo(){
+    const lado1 = document.getElementById("TrianguloLado1");
+    const lado2 = document.getElementById("TrianguloLado2");
+    const base = document.getElementById("TrianguloBase");
+    const valorL1 = Number(lado1.value);
+    const valorL2 = Number(lado2.value);
+    const valorBa = Number(base.value);
+
+    verificar(valorL1, valorL2, valorBa);
+}
