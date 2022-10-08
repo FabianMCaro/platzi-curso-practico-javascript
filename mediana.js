@@ -33,7 +33,7 @@ function esPar(numerito){
 
 function calcularMediana(lista){
 
-    lista.sort(function(a,b){return a - b;});// metodo sort y funcion para ordenar la lista
+    lista.sort(function(a,b){return a - b;});// metodo sort y funcion para ordenar la lista 
 
     let mediana;
     const mitadLista = parseInt(lista.length / 2);
