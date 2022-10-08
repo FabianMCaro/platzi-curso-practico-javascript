@@ -16,19 +16,12 @@ function calcularMediaAritmetica(lista){
     
 }
 
-
 //const lista1 = [
 //    100,
 //    200,
 //    500,
 //    400000000,
 //];
-
-
-
-
-
-
 
 function esPar(numerito){
     if(numerito % 2 === 0){
@@ -38,8 +31,10 @@ function esPar(numerito){
     }
 }
 
-
 function calcularMediana(lista){
+
+    lista.sort(function(a,b){return a - b;});// metodo sort y funcion para ordenar la lista
+
     let mediana;
     const mitadLista = parseInt(lista.length / 2);
     if(esPar(lista.length)){
