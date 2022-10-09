@@ -18,7 +18,7 @@
 - Cuarto paso: integrar JS con HTML.
 - Reto 2: Agregar descuento mediante cupones
 
-## Taller #3: Promedio, nediana y moda
+## Taller #3: Promedio, mediana y moda
 
 - Primer paso: definir las formulas.
 - Segundo paso: implementar la fórmulas en JavaScript.
